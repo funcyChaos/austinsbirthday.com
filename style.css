@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.main-container {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: black;
+}
+.main-container .hero-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container .hero-header img {
+  width: 100%;
+}
+.main-container .hero-header .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+}
+.main-container .hero-header .title h1 {
+  font-size: 6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
