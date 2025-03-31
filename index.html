@@ -7,15 +7,30 @@
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<div class="main-container">	
-			<div class="hero-header">
-				<div class="title">
-					<h1>Birthday Party</h1>
-				</div>
-				<div class="image">
-					<img src="img/bdaypartyaustin.png" alt="Birthday Hero">
-				</div>
-			</div>
-		</div>
+		<main>	
+			<header>
+				<h1>Happy Birthday, Austin!</h1>
+				<p>Be sure to come and dance, chat, and party!</p>
+				<p>There will be food and beer and weed!</p>
+				<p>I'm excited to see you there</p>
+			</header>
+
+			<section>
+				<h2>When and Where</h2>
+				<p><strong>Date:</strong> Saturday, October 14th, 2023</p>
+				<p><strong>Time:</strong> 6:00 PM - 11:00 PM</p>
+				<p><strong>Location:</strong> 123 Party Lane, Austin, TX</p>
+				<p>Feel free to bring a friend or two!</p>
+			</section>
+
+			<section>
+				<div id="map"></div>
+			</section>
+		</main>
+
+		<script src="./js/populate.js"></script>
+		<script src="./js/map.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=[KEY]&callback=initMap&loading=async&libraries=marker">
+		</script>
 	</body>
 </html>

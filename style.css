@@ -4,30 +4,44 @@
   color: white;
 }
 
-.main-container {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
   width: 100vw;
   min-height: 100vh;
   background-color: black;
+  background-image: url("./img/bdaypartyaustin.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-.main-container .hero-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-container .hero-header img {
-  width: 100%;
-}
-.main-container .hero-header .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
+main header {
+  text-align: center;
+  margin: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.5333333333);
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  font-size: 1.5rem;
 }
-.main-container .hero-header .title h1 {
-  font-size: 6rem;
+main header * {
+  margin: 0.5rem 0;
+}
+main section {
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  font-size: 1.5rem;
+}
+main section * {
+  margin: 0.5rem 0;
+}
+main section #map {
+  height: 400px;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
