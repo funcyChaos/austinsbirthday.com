@@ -4,18 +4,23 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Austin's Birthday!</title>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 		<link rel="stylesheet" href="./style.css">
 	</head>
 	<body>
-		<div class="main-container">	
-			<div class="hero-header">
-				<div class="title">
-					<h1>Birthday Party</h1>
+		<main id="root">
+			<header id="header">
+				<h1>Your invite is the password</h1>
+				<div class="password">
+					<input id="password_input" type="text">
+					<button id="submit_button">View Invite</button>
+					<div class="typing" id="typing_div"></div>
 				</div>
-				<div class="image">
-					<img src="img/bdaypartyaustin.png" alt="Birthday Hero">
-				</div>
-			</div>
-		</div>
+			</header>
+		</main>
+		<script src="./js/background.js"></script>
+		<script src="./js/populate.js" defer></script>
+		</script>
 	</body>
 </html>

@@ -1,33 +1,123 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
-.main-container {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: black;
+body {
+  background-color: #1e1e25;
 }
-.main-container .hero-header {
+
+main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-}
-.main-container .hero-header img {
-  width: 100%;
-}
-.main-container .hero-header .title {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  position: absolute;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+main header {
+  text-align: center;
+  margin: 0.5rem 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.5333333333);
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  color: white;
+  font-size: 1.5rem;
+  width: 400px;
 }
-.main-container .hero-header .title h1 {
-  font-size: 6rem;
+main header h1, main header p {
+  margin: 1rem 0;
+}
+main header a {
+  color: white;
+}
+@media (max-width: 450px) {
+  main header {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  main header {
+    width: 250px;
+  }
+}
+main header .password {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+main header .password input {
+  font-size: 2rem;
+  width: 290px;
+  text-align: center;
+}
+main header .password button {
+  border-radius: 0.2rem;
+  background-color: #1e1e25;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  width: 200px;
+  cursor: pointer;
+}
+main header .password .typing {
+  height: 1rem;
+}
+main section {
+  text-align: center;
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.7529411765);
+  color: white;
+  font-size: 1.5rem;
+  width: 400px;
+}
+main section h1, main section p {
+  margin: 1rem 0;
+}
+main section a {
+  color: white;
+}
+@media (max-width: 450px) {
+  main section {
+    width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  main section {
+    width: 250px;
+  }
+}
+main section #map {
+  height: 400px;
+  border-radius: 0.5rem;
+}
+
+.leaflet-popup-content-wrapper {
+  width: 200px;
+  background: #1e1e1e;
+  color: #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+.leaflet-popup-content h1 {
+  margin: 0;
+}
+.leaflet-popup-content .directions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.leaflet-popup-tip {
+  background: #1e1e1e;
 }
 
 /*# sourceMappingURL=style.css.map */
