@@ -1,14 +1,15 @@
-const root = document.getElementById("root")
-const submit = document.getElementById("submit_button")
-const passInput = document.getElementById("password_input")
-const intro = document.createElement("section")
-const localeSect = document.createElement('section')
-const mapSect = document.createElement("section")
-const mapDiv = document.createElement("div")
-mapDiv.id = "map"
+const root 				= document.getElementById("root")
+const header 			= document.getElementById("header")
+const submit 			= document.getElementById("submit_button")
+const passInput 	= document.getElementById("password_input")
+const typing 			= document.getElementById("typing_div")
+const intro 			= document.createElement("section")
+const localeSect 	= document.createElement('section')
+const mapSect 		= document.createElement("section")
+const mapDiv 			= document.createElement("div")
+let isSubmit 			= false
+mapDiv.id 				= "map"
 mapSect.appendChild(mapDiv)
-const typing = document.getElementById("typing_div")
-let isSubmit = false
 passInput.addEventListener("keydown", e=>{
 	if(e.key === "Enter"){
 		isSubmit = true
@@ -38,6 +39,7 @@ function submitPassword(){
 	.then(data=>{
 		console.log(data)
 		if(data){
+			header.style.display = "none"
 			localeSect.innerHTML = data.content.locale
 			intro.innerHTML = data.content.intro
 			root.appendChild(intro)
