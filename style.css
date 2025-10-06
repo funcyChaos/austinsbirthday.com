@@ -30,6 +30,9 @@ main header h1, main header p {
 main header a {
   color: white;
 }
+main header .calendar {
+  color: hotpink;
+}
 @media (max-width: 450px) {
   main header {
     width: 300px;
@@ -80,6 +83,9 @@ main section h1, main section p {
 main section a {
   color: white;
 }
+main section .calendar {
+  color: hotpink;
+}
 @media (max-width: 450px) {
   main section {
     width: 300px;
@@ -114,6 +120,10 @@ main section #map {
   flex-direction: column;
   gap: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.leaflet-container a {
+  color: hotpink;
 }
 
 .leaflet-popup-tip {

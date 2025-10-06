@@ -17,6 +17,9 @@ body{
 	font-size: 1.5rem;
 	h1,p{margin: 1rem 0;}
 	a{color:white;}
+	.calendar{
+		color: hotpink;
+	}
 
 	width: 400px;
 
@@ -95,6 +98,10 @@ main{
 		gap: .5rem;
 		padding-bottom: .5rem;
 	}
+}
+
+.leaflet-container a{
+	color: hotpink;
 }
 
 .leaflet-popup-tip {
